@@ -1,8 +1,8 @@
 const ReferAndEarn = () => {
     return (
-        <section className="max-w-screen-xl mx-auto space-y-8 px-4 pb-28">
+        <section className="max-w-screen-lg mx-auto space-y-8 px-4 pb-28">
             {/* Title */}
-            <h2 className="text-3xl font-bold text-blue-700 flex items-center space-x-2 max-w-screen-lg mx-auto">
+            <h2 className="text-4xl bg-gradient-to-r from-[#2C418F] to-[#4B70F5] text-transparent bg-clip-text">
                 Refer & Earn Money
             </h2>
 
@@ -30,7 +30,7 @@ const ReferAndEarn = () => {
                 </div>
 
                 {/* Bottom Highlight Section */}
-                <div className="bg-blue-500 text-white text-center py-3 px-12 rounded-2xl md:rounded-full">
+                <div className="bg-blue-500 text-white text-center p-4 rounded-2xl md:rounded-full">
                     Bring new members and earn when they deposit and when they work. Passive income for life! <br />{" "}
                     Yes, it's that easy!
                 </div>

@@ -3,9 +3,9 @@ const AnotherSection = () => {
         <section className="max-w-screen-lg mx-auto flex max-lg:flex-col items-center justify-center px-4 pb-28">
             {/* Text Content */}
             <div className="container max-w-lg ">
-                <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#2C418F] to-[#4B70F5] text-transparent bg-clip-text max-md:text-xl">
+                <h2 className="text-4xl mb-4 bg-gradient-to-r from-[#2C418F] to-[#4B70F5] text-transparent bg-clip-text">
                     Earn money by helping other people grow
-                </h1>
+                </h2>
                 <p className="text-lg text-gray-700 mb-6">
                     Get paid by helping people grow, no investment or signup fee required.
                 </p>

@@ -2,9 +2,9 @@ import { FaPlay } from "react-icons/fa";
 
 const HowToUseSection = () => {
     return (
-        <section className="bg-white pb-28 px-4 rounded-lg  flex flex-col items-center text-center max-w-3xl mx-auto">
+        <section className="bg-white pb-28 px-4 rounded-lg  flex flex-col items-center text-center max-w-screen-lg mx-auto">
             {/* Title & Description (Placed at the Top) */}
-            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#2C418F] to-[#4B70F5] text-transparent bg-clip-text max-md:textxl">
+            <h2 className="text-4xl mb-4 bg-gradient-to-r from-[#2C418F] to-[#4B70F5] text-transparent bg-clip-text">
                 How Easy to Use Hovertask
             </h2>
 
