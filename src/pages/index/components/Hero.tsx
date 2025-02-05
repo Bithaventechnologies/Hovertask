@@ -10,7 +10,7 @@ const Hero = () => {
                 </p>
             </div>
             <div className="space-y-6 p-4">
-                <div className="flex items-center gap-6 justify-center">
+                <div className="flex items-center gap-6 justify-center flex-wrap">
                     <Link to="/register" className="bg-[#4B70F5] p-4 rounded-[24px] text-white">
                         Create Account
                     </Link>
@@ -33,7 +33,7 @@ const Hero = () => {
                     className="max-w-lg mx-auto block w-full"
                     alt="Girls using mobile phone"
                 />
-                <div className="bg-gradient-to-br from-blue-800 to-blue-600 p-6 flex items-center justify-around">
+                <div className="bg-gradient-to-br from-blue-800 to-blue-600 p-6 flex items-center justify-around gap-2 flex-wrap">
                     <div className="text-sm text-center p-2 rounded-lg bg-gradient-to-b from-blue-600 via-blue-800 to-blue-900 text-white">
                         500k+ <br /> Members
                     </div>

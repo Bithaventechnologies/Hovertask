@@ -1,6 +1,6 @@
 const OtherSection = () => {
     return (
-        <section className="bg-blue-50/20 flex flex-col items-center text-center pb-20">
+        <section className="bg-blue-50/20 flex flex-col items-center text-center pb-28">
             {/* Header */}
             <h2 className="bg-gradient-to-r from-blue-100 via-blue-400 to-blue-100 text-white w-full px-8 py-3 rounded-lg text-3xl -translate-y-1">
                 Unleash the Power of Social Media Advertising
@@ -14,15 +14,15 @@ const OtherSection = () => {
             <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 justify-center items-center w-full max-w-6xl">
                 {/* Floating Dashboard Images */}
                 <div>
-                    <img src="/assets/images/app-uis.png" alt="App Dashboard UI" className="m-auto rounded-2xl" />
+                    <img src="/assets/images/app-uis.png" alt="App Dashboard UI" className="m-auto rounded-2xl block" />
                 </div>
 
                 {/* Features Cards */}
-                <div className="mt-10 lg:mt-0 lg:ml-16 space-y-6 relative">
+                <div className="space-y-6">
                     {features.map((feature, index) => (
                         <div
                             key={index}
-                            className="bg-[#DAE2FF4D] p-6 rounded-lg shadow-lg max-w-xs text-left transform rotate-[-5deg]"
+                            className="bg-[#DAE2FF4D] p-6 rounded-lg shadow-lg max-w-xs text-left transform rotate-[-5deg] mx-auto"
                         >
                             <h3 className="text-lg font-semibold text-gray-900">{feature.title}</h3>
                             <p className="text-gray-600 mt-2">{feature.description}</p>

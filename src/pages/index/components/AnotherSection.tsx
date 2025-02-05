@@ -1,9 +1,9 @@
 const AnotherSection = () => {
     return (
-        <section className="max-w-screen-lg mx-auto flex max-lg:flex-col items-center justify-center px-4 pb-20">
+        <section className="max-w-screen-lg mx-auto flex max-lg:flex-col items-center justify-center px-4 pb-28">
             {/* Text Content */}
             <div className="container max-w-lg ">
-                <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#2C418F] to-[#4B70F5] text-transparent bg-clip-text max-md:textxl">
+                <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#2C418F] to-[#4B70F5] text-transparent bg-clip-text max-md:text-xl">
                     Earn money by helping other people grow
                 </h1>
                 <p className="text-lg text-gray-700 mb-6">

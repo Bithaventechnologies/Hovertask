@@ -1,6 +1,6 @@
 const ReferAndEarn = () => {
     return (
-        <section className="max-w-screen-xl mx-auto space-y-8 px-4 pb-20">
+        <section className="max-w-screen-xl mx-auto space-y-8 px-4 pb-28">
             {/* Title */}
             <h2 className="text-3xl font-bold text-blue-700 flex items-center space-x-2 max-w-screen-lg mx-auto">
                 Refer & Earn Money
