@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 body {
-  font-family: "Outfit", serif;
+    font-family: "Outfit", serif;
 }
 
-.Hero {
-  background-image: url("../src//assets/herobackgroun.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.hero {
+    background-image: url("/images/hero-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
