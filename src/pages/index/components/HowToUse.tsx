@@ -15,7 +15,7 @@ const HowToUseSection = () => {
 
             {/* Image & Overlay (Centered) */}
             <div className="relative w-full max-w-lg">
-                <img src="/images/how.png" alt="How to Use Hovertask" className="rounded-lg w-full" />
+                <img src="/assets/images/how.png" alt="How to Use Hovertask" className="rounded-lg w-full" />
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <div className="w-16 h-16 text-white bg-red-500 rounded-full p-3 shadow-lg flex justify-center items-center">
                         <FaPlay />

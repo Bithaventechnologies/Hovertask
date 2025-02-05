@@ -51,14 +51,14 @@ const Footer = () => {
                     <div className="flex gap-4">
                         <a href="#">
                             <img
-                                src="/images/Apple.png"
+                                src="/assets/images/Apple.png"
                                 alt="App Store"
                                 className="h-14 hover:opacity-80 transition object-contain"
                             />
                         </a>
                         <a href="#">
                             <img
-                                src="/images/Google.png"
+                                src="/assets/images/Google.png"
                                 alt="Google Play"
                                 className="h-14 hover:opacity-80 transition object-contain"
                             />

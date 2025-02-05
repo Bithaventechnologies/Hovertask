@@ -22,7 +22,7 @@ const AnotherSection = () => {
             {/* Image Section */}
             <div className="lg:block w-1/2 relative w-fit">
                 <img
-                    src="/images/hand-holding-phone.png"
+                    src="/assets/images/hand-holding-phone.png"
                     alt="Phone with Social Media Icons"
                     className="w-full object-cover h-full max-w-sm"
                 />

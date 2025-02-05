@@ -18,7 +18,7 @@ const ReferAndEarn = () => {
                     {/* Image Section */}
                     <div className="relative">
                         <img
-                            src="/images/closeup-shot-two-pretty-afro-american-girls-using-their-phones-while-holding-shopping-bags.png"
+                            src="/assets/images/closeup-shot-two-pretty-afro-american-girls-using-their-phones-while-holding-shopping-bags.png"
                             alt="Refer & Earn"
                             className="w-full max-w-md object-cover"
                         />

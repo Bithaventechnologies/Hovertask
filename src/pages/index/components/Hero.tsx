@@ -20,16 +20,16 @@ const Hero = () => {
                 </div>
                 <div className="flex items-center gap-6 justify-center">
                     <a href="#">
-                        <img src="/images/Google.png" alt="Google play logo" />
+                        <img src="/assets/images/Google.png" alt="Google play logo" />
                     </a>
                     <a href="#">
-                        <img src="/images/Apple.png" alt="Apple store logo" />
+                        <img src="/assets/images/Apple.png" alt="Apple store logo" />
                     </a>
                 </div>
             </div>
             <div className="">
                 <img
-                    src="/images/black-girls-city.png"
+                    src="/assets/images/black-girls-city.png"
                     className="max-w-lg mx-auto block w-full"
                     alt="Girls using mobile phone"
                 />

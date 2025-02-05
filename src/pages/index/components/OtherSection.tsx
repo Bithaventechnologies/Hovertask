@@ -14,7 +14,7 @@ const OtherSection = () => {
             <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 justify-center items-center w-full max-w-6xl">
                 {/* Floating Dashboard Images */}
                 <div>
-                    <img src="/images/app-uis.png" alt="App Dashboard UI" className="m-auto rounded-2xl" />
+                    <img src="/assets/images/app-uis.png" alt="App Dashboard UI" className="m-auto rounded-2xl" />
                 </div>
 
                 {/* Features Cards */}
