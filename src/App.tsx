@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/index";
-import PublicLayout from "./layouts/PublicLayout";
+import PublicLayout from "./layouts/Public";
 
 const App = () => {
     return (

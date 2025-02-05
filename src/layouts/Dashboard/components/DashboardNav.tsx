@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { navList } from "../lib/data";
+import { navList } from "../../../lib/data";
 import { BiSolidDownArrow } from "react-icons/bi";
 import phone from "../assets/phone.png";
 import currency from "../assets/currency.png";

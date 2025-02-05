@@ -6,7 +6,7 @@ import { IoMoonOutline } from "react-icons/io5";
 import { IoCartOutline } from "react-icons/io5";
 import { BiSolidDownArrow } from "react-icons/bi";
 import flag from "../assets/flag.svg";
-import { navList } from "../lib/data";
+import { navList } from "../../../lib/data";
 import { Link } from "react-router-dom";
 import { TbMenu2 } from "react-icons/tb";
 import { GrSearch } from "react-icons/gr";

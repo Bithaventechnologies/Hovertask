@@ -1,6 +1,6 @@
-import DashboardHeader from "../components/DashboardHeader";
+import DashboardHeader from "./components/DashboardHeader";
 import { Outlet } from "react-router-dom";
-import DashboardNav from "../components/DashboardNav";
+import DashboardNav from "./components/DashboardNav";
 import { useState } from "react";
 
 const DashboardLayout = () => {
