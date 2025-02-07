@@ -16,7 +16,7 @@ const Newsletter = () => {
 
             <form
                 onSubmit={handleSubmit}
-                className="flex max-w-screen-md mx-auto border rounded-full py-1 px-4 pr-2 border-black gap-2 items-center"
+                className="flex max-w-screen-sm mx-auto border rounded-full py-1 px-4 pr-2 border-black gap-2 items-center"
             >
                 <input
                     type="email"
