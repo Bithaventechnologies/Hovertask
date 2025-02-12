@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { Link } from "react-router-dom";
 import guyimge from "../assets/Rectangle 39322.png";
 import logo from "../assets/brand-logo.svg";
 
@@ -131,12 +132,12 @@ const Signup = () => {
 
           <p className="text-center text-gray-600 mt-6">
             Already have an account?{" "}
-            <a
-              href="#"
-              className="text-blue-600 hover:text-blue-700 font-medium"
+            <Link
+              to="/signin"
+              className="text-blue-600 hover:text-blue-700 font-medium cursor-pointer"
             >
               Sign In
-            </a>
+            </Link>
           </p>
         </div>
       </div>
