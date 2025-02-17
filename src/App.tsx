@@ -5,6 +5,7 @@ import Aboutus from "./pages/index/components/Aboutus";
 import Contactus from "./pages/index/components/Contactus";
 import Signup from "./auth/Signup";
 import SignIn from "./auth/Signin";
+import MarketPlace from "./pages/dashboard/components/MarketPlace";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="contact" element={<Contactus />} />
           <Route path="signup" element={<Signup />} />
           <Route path="signin" element={<SignIn />} />
+          <Route path="market" element={<MarketPlace />} />
         </Route>
         {/* Public routes */}
       </Routes>

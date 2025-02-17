@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Link } from "react-router-dom";
 import guyimge from "../assets/Rectangle 39322.png";
+
 import logo from "../assets/brand-logo.svg";
 
 interface InputProps {
@@ -21,7 +22,6 @@ const Input = ({ label, id, ...props }: InputProps) => (
     />
   </div>
 );
-
 const Signup = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white p-4 flex items-center justify-center">
