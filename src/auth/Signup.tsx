@@ -1,13 +1,13 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import guyimge from "../assets/Rectangle 39322.png";
 
-import logo from "../assets/brand-logo.svg";
+import thisguy from "../assets/Rectangle 39322.png";
+import frackels from "../assets/frackels.webp";
+import thisgirl from "../assets/newgilr.jpeg";
 
-interface InputProps {
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
   id: string;
-  [key: string]: any;
 }
 
 const Input = ({ label, id, ...props }: InputProps) => (
@@ -22,36 +22,133 @@ const Input = ({ label, id, ...props }: InputProps) => (
     />
   </div>
 );
+
 const Signup = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const slides = [
+    {
+      image: thisguy,
+      title: "Unlock Your Earning Potential",
+      description:
+        "Discover endless opportunities to earn, advertise, and resell products.",
+    },
+    {
+      image: frackels,
+      title: "Boost your brand visibility",
+      description:
+        "Advertise on our marketplace or levergae social media to grow your business.",
+    },
+    {
+      image: thisgirl,
+      title: "Turn Product to profit ",
+      description:
+        "Access a widea way of products to resell and earn commissions.",
+    },
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(timer);
+  }, []);
+
+  // const nextSlide = () => {
+  //   setCurrentSlide((prev) => (prev + 1) % slides.length);
+  // };
+
+  // const prevSlide = () => {
+  //   setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  // };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white p-4 flex items-center justify-center">
       <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-5xl flex flex-col md:flex-row gap-8">
-        {/* Left Section */}
+        {/* Left Section - Carousel */}
         <div className="w-full md:w-1/2">
-          <div className="relative h-[500px] rounded-2xl overflow-hidden transform hover:rotate-0 transition-transform duration-300 rotate-[-2deg]">
-            <img
-              src={guyimge}
-              alt="Unlock Earning Potential"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
-              <div className="absolute bottom-0 p-6 text-white">
-                <h2 className="text-2xl font-bold mb-2">
-                  Unlock Your Earning Potential
-                </h2>
-                <p className="text-gray-200">
-                  Discover endless opportunities to earn, advertise, and resell
-                  products.
-                </p>
+          <div className="relative h-[500px] rounded-2xl overflow-hidden">
+            {/* Images Container */}
+            <div
+              className="absolute w-full h-full transition-transform duration-700 ease-in-out"
+              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+            >
+              <div className="absolute w-full h-full flex">
+                {slides.map((slide, index) => (
+                  <div
+                    key={index}
+                    className="min-w-full h-full relative transform hover:rotate-0 transition-transform duration-300 overflow-hidden"
+                    style={{
+                      transform:
+                        currentSlide === index
+                          ? "rotate(-2deg)"
+                          : "rotate(0deg)",
+                    }}
+                  >
+                    {/* <div className="relative h-[500px] rounded-2xl overflow-hidden transform hover:rotate-0 transition-transform duration-300 rotate-[-2deg]" */}
+                    <img
+                      src={slide.image}
+                      alt={slide.title}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
+                      <div
+                        className="absolute bottom-16 p-6 text-white transition-opacity duration-500"
+                        style={{ opacity: currentSlide === index ? 1 : 0 }}
+                      >
+                        <h2 className="text-2xl font-bold mb-2">
+                          {slide.title}
+                        </h2>
+                        <p className="text-gray-200">{slide.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
+            </div>
+
+            {/* Navigation Arrows */}
+            {/* <div className="absolute top-1/2 -translate-y-1/2 w-full px-4 flex justify-between">
+              <button
+                onClick={prevSlide}
+                className="p-2 rounded-full bg-white/20 hover:bg-white/40 transition-colors"
+              >
+                <ChevronLeft className="w-6 h-6 text-white" />
+              </button>
+              <button
+                onClick={nextSlide}
+                className="p-2 rounded-full bg-white/20 hover:bg-white/40 transition-colors"
+              >
+                <ChevronRight className="w-6 h-6 text-white" />
+              </button>
+            </div> */}
+
+            {/* Indicators */}
+            <div className="absolute bottom-4 left-0 right-0 flex justify-center items-center gap-2 transition-transform duration-700">
+              {slides.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentSlide(index)}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    currentSlide === index
+                      ? "w-6 bg-blue-500"
+                      : "bg-white/50 hover:bg-white/75"
+                  }`}
+                />
+              ))}
             </div>
           </div>
         </div>
 
-        {/* Right Section */}
+        {/* Right Section - Form */}
         <div className="w-full md:w-1/2 flex flex-col">
           <div className="pb-6 mb-6 border-b border-gray-200">
-            <img src={logo} alt="Hovertask Logo" className="h-8" />
+            <img
+              src="/api/placeholder/120/32"
+              alt="Hovertask Logo"
+              className="h-8"
+            />
           </div>
 
           <div className="mb-8">
