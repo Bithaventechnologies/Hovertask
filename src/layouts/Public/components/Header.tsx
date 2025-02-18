@@ -11,7 +11,7 @@ const Header = () => {
   const nav = useNavigate();
 
   return (
-    <div className="bg-gradient-to-b sticky top-0 w-full left-0 z-50 from-[#31187D59] to-[#7373731A] shadow-md">
+    <div className="bg-gradient-to-b sticky top-0 w-full left-0 z-50 bg-white from-[#31187D59] to-[#7373731A] shadow-md">
       <div className="max-w-screen-xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link to="/">
