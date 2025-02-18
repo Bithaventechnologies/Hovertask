@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <div className="bg-gradient-to-b sticky top-0 w-full left-0 z-50 bg-white from-[#31187D59] to-[#7373731A] shadow-md">
-      <div className="max-w-screen-xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="  mx-auto w-[80%] py-4 px-8 flex justify-between items-center">
         {/* Logo */}
         <Link to="/">
           <img src={logo} alt="Hover Task Logo" className="w-24" />
